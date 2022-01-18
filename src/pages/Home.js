@@ -11,7 +11,7 @@ const Home = () => {
       className="app-main-container h-100"
       style={{ padding: 0 }}
     >
-      <Row style={{ height: "82px" }}>
+      <Row style={{ height: "55px" }}>
         <Col>
           <NavbarComponent />
         </Col>

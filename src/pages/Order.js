@@ -7,7 +7,7 @@ import MainContentTab from "../components/MainContentTab";
 const Order = () => {
   return (
     <Container fluid className="app-main-container" style={{ padding: 0 }}>
-      <Row style={{ height: "82px" }}>
+      <Row style={{ height: "55px" }}>
         <Col>
           <NavbarComponent />
         </Col>

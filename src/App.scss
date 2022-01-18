@@ -81,13 +81,13 @@ input[type="checkbox"] {
 
 // NavbarComponent
 .navbar-top {
-  height: 82px;
+  height: 55px;
   z-index: 1010;
   background-color: #ffff;
   box-shadow: 0px 4px 20px 0 rgba(215, 217, 226, 0.46);
 }
 .navbar-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
   object-fit: contain;
 }
@@ -528,4 +528,58 @@ input[type="checkbox"] {
   &:hover {
     background-color: #f55300 !important;
   }
+
+  &:disabled {
+    background-color: #c4c4c4 !important;
+  }
+}
+
+.card-list-accept-outline-btn {
+  cursor: pointer;
+  background-color: #ffff !important;
+  border: 1px solid #e66427 !important;
+  color: #e66427 !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  width: 189px;
+
+  &:hover {
+    background-color: #f55300 !important;
+    color: #ffff !important;
+  }
+
+  &:disabled {
+    background-color: #c4c4c4 !important;
+  }
+}
+
+// ModalResi
+.modal-resi-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #393d43;
+  text-align: center;
+}
+
+// NoTransaction
+.no-img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+.no-txt {
+  font-size: 24px;
+  color: #6c727c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.no-sub-txt {
+  font-size: 12px;
+  color: #6c727c;
+  text-align: center;
 }

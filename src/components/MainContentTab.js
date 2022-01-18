@@ -7,9 +7,14 @@ import Box from "@mui/material/Box";
 import LaporanButton from "./LaporanButton";
 import FilterComponent from "./FilterComponent";
 import ChipComponent from "./ChipComponent";
+import ChipDelivery from "./ChipDelivery";
+import ChipComplaint from "./ChipComplaint";
 import { TabPanel, a11yProps } from "./TabPanel";
 import CheckboxChooseAll from "./CheckboxChooseAll";
 import CardListContent from "./CardListContent";
+import CardListDelivery from "./CardListDelivery";
+import CardListOnDelivery from "./CardListOnDelivery";
+import NoTransaction from "./NoTransaction";
 
 const MainContentTab = () => {
   const [value, setValue] = useState(0);
@@ -84,15 +89,38 @@ const MainContentTab = () => {
           <FilterComponent />
         </TabPanel>
         <TabPanel value={value} index={2} className="main-tab-panel">
-          <ChipComponent />
+          <ChipDelivery />
+          <FilterComponent />
+        </TabPanel>
+        <TabPanel value={value} index={3} className="main-tab-panel">
+          <FilterComponent />
+        </TabPanel>
+        <TabPanel value={value} index={4} className="main-tab-panel">
+          <ChipComplaint />
+          <FilterComponent />
+        </TabPanel>
+        <TabPanel value={value} index={5} className="main-tab-panel">
+          <FilterComponent />
+        </TabPanel>
+        <TabPanel value={value} index={6} className="main-tab-panel">
           <FilterComponent />
         </TabPanel>
       </Box>
 
-      <CheckboxChooseAll />
+      {value < 4 && <CheckboxChooseAll />}
 
       <div>
-        <CardListContent />
+        {value === 0 && (
+          <>
+            <CardListContent />
+            <CardListDelivery />
+            <CardListOnDelivery />
+          </>
+        )}
+        {value === 1 && <CardListContent />}
+        {value === 2 && <CardListDelivery />}
+        {value === 3 && <CardListOnDelivery />}
+        {value === 4 && <NoTransaction />}
       </div>
     </Container>
   );

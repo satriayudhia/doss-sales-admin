@@ -2,7 +2,7 @@ import React from "react";
 
 const CheckboxChooseAll = () => {
   return (
-    <div className="my-4 ms-1 d-flex align-items-center">
+    <div className="my-3 ms-1 d-flex align-items-center">
       <input id="choose-all" type="checkbox" />
       <label
         htmlFor="choose-all"
