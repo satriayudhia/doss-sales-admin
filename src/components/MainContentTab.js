@@ -24,7 +24,7 @@ const MainContentTab = () => {
   };
 
   return (
-    <Container className="mt-4 ms-4">
+    <Container fluid className="mt-4 ms-4">
       <div className="d-flex justify-content-between align-items-center">
         <div className="main-tab-header mb-2">Daftar Pesanan</div>
         <LaporanButton />

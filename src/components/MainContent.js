@@ -5,7 +5,7 @@ import MainContentCard from "./MainContentCard";
 
 const MainContent = () => {
   return (
-    <Container className="mt-4 ms-4">
+    <Container fluid className="mt-4 ms-4">
       <div className="main-title-header">Penting Hari Ini</div>
       <div className="main-title-subheader">
         Aktivitas yang perlu kamu pantau untuk jaga kepuasan pembeli
