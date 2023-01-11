@@ -7,11 +7,14 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "typeface-roboto";
+import { AppContextProvider } from "./configs/AppContext";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AppContextProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </AppContextProvider>,
   document.getElementById("root")
 );
 

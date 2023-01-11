@@ -73,6 +73,63 @@ input[type="checkbox"] {
   }
 }
 
+.default-label {
+  color: rgba(49, 53, 59, 0.68);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  display: inline-block;
+  pointer-events: none;
+  margin-bottom: 4px;
+}
+
+.default-input {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  color: rgba(49, 53, 59, 0.96);
+  font-family: inherit;
+  line-height: 20px;
+  outline: none;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 280ms ease 0s;
+  background-color: #ffffff;
+  border: 1px solid #e5e7e9;
+
+  &:focus {
+    border: 1px solid #ed6026;
+  }
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.pl-35 {
+  padding-left: 35px;
+}
+
+.password-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  color: #9e9e9e;
+}
+
 // App
 .app-main-container {
   background-color: #f3f4f5;
@@ -582,4 +639,65 @@ input[type="checkbox"] {
   font-size: 12px;
   color: #6c727c;
   text-align: center;
+}
+
+// Login
+.login-header {
+  text-align: center;
+  padding: 32px 0 9px;
+
+  img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.login-content {
+  position: relative;
+  margin-top: 10px;
+  min-height: 580px;
+
+  .login-bg {
+    width: 816px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .login-card-container {
+    width: 368px;
+    background: #fff;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+
+    .login-text-header {
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgba(49, 53, 59, 0.96);
+    }
+
+    .login-forgot-pass {
+      text-align: right;
+      color: #ed6026;
+      cursor: pointer;
+      font-size: 12px;
+
+      &:hover {
+        color: #f55300;
+      }
+    }
+  }
+}
+
+.login-copyright {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(49, 53, 59, 0.68);
+  padding-bottom: 20px;
 }
