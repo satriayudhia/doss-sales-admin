@@ -2,7 +2,7 @@ import React from "react";
 import { InputGroup, FormControl } from "react-bootstrap";
 import { BiSearch } from "react-icons/bi";
 import { AiOutlineCalendar } from "react-icons/ai";
-import { Cascader } from "antd";
+import { Cascader, DatePicker } from "antd";
 
 const options = [
   {
@@ -61,6 +61,7 @@ const optionsSort = [
 ];
 
 const FilterComponent = () => {
+  const { RangePicker } = DatePicker;
   function onChange(value) {
     console.log(value);
   }
@@ -108,7 +109,9 @@ const FilterComponent = () => {
         className="cascader-class me-3"
       />
 
-      <div className="rail-select me-3">
+      <RangePicker onChange={onChange} className="cascader-class" />
+
+      {/* <div className="rail-select me-3">
         <div className="select-side">
           <AiOutlineCalendar size={20} color="#0c135f" />
         </div>
@@ -116,7 +119,7 @@ const FilterComponent = () => {
         <FormControl as="select">
           <option value="">04 Aug 21 - 02 Nov 21</option>
         </FormControl>
-      </div>
+      </div> */}
     </div>
   );
 };
