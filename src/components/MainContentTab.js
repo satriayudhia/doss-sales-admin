@@ -15,6 +15,7 @@ import CardListContent from "./CardListContent";
 import CardListDelivery from "./CardListDelivery";
 import CardListOnDelivery from "./CardListOnDelivery";
 import NoTransaction from "./NoTransaction";
+import Pagination from "./Pagination";
 
 const MainContentTab = () => {
   const [value, setValue] = useState(0);
@@ -122,6 +123,8 @@ const MainContentTab = () => {
         {value === 3 && <CardListOnDelivery />}
         {value === 4 && <NoTransaction />}
       </div>
+
+      <Pagination />
     </Container>
   );
 };

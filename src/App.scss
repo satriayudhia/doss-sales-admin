@@ -73,6 +73,10 @@ input[type="checkbox"] {
   }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .default-label {
   color: rgba(49, 53, 59, 0.68);
   font-size: 12px;
@@ -405,9 +409,17 @@ input[type="checkbox"] {
   border-radius: 8px !important;
 }
 
+.ant-input-number {
+  border-radius: 8px !important;
+}
+
 .ant-cascader-menu {
   height: auto !important;
   width: auto !important;
+}
+
+.ant-input-number-handler-wrap {
+  border-radius: 0 8px 8px 0;
 }
 
 // CardListContent
@@ -704,4 +716,18 @@ input[type="checkbox"] {
   text-align: center;
   color: rgba(49, 53, 59, 0.68);
   padding-bottom: 20px;
+}
+
+// Pagination
+.pagination-container {
+  background-color: #ffff;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0px 4px 10px 0 rgba(215, 217, 226, 0.46);
+
+  // &:hover {
+  //   border: 1px solid rgba(215, 217, 226, 0.66);
+  //   box-shadow: 0px 4px 20px 0 rgba(215, 217, 226, 0.66);
+  // }
 }
